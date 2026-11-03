@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#25143f">
+<title>Operacja: STARCZI 29 🎂</title>
+<style>
+:root{--bg:#1b1230;--panel:#2b1d45;--pink:#ff83bd;--gold:#ffd778;--lav:#c8b5ff;--white:#fff8ff}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--white);font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at 15% 10%,#54346d 0,transparent 35%),radial-gradient(circle at 90% 85%,#4c285d 0,transparent 35%),linear-gradient(135deg,#160f29,#2b1742);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:34px 34px}
+main{width:min(720px,calc(100% - 28px));margin:0 auto;padding:26px 0 54px;position:relative}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:.82rem;color:#e4d8f7;letter-spacing:.08em;text-transform:uppercase}
+.pill{border:1px solid #ffffff35;border-radius:99px;padding:7px 11px;background:#ffffff0d}
+.progress-wrap{height:7px;background:#ffffff20;border-radius:20px;margin:20px 0 26px;overflow:hidden}
+#progress{height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--gold));border-radius:20px;transition:width .5s}
+.card{background:linear-gradient(145deg,#34234fef,#241837f5);border:1px solid #ffffff22;border-radius:28px;padding:clamp(22px,5vw,42px);box-shadow:0 24px 70px #08051070;position:relative;overflow:hidden}
+.card:after{content:"✦";position:absolute;right:22px;top:14px;color:#ffd77866;font-size:42px}
+.eyebrow{color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+h1{font-size:clamp(2.2rem,8vw,4.2rem);line-height:.98;margin:15px 0 16px;letter-spacing:-.055em}
+h1 span{color:var(--pink)}
+h2{font-size:clamp(1.6rem,5vw,2.3rem);line-height:1.1;margin:12px 0}
+p{color:#e9dff4;line-height:1.65;font-size:1.03rem}
+.big-emoji{font-size:clamp(4rem,15vw,7rem);display:block;text-align:center;margin:12px 0;filter:drop-shadow(0 8px 18px #0005);animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-9px) rotate(3deg)}}
+button{font:inherit;cursor:pointer;border:0;border-radius:15px;padding:14px 18px;font-weight:800;transition:transform .15s,filter .15s}
+button:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.primary{background:linear-gradient(100deg,var(--pink),#ffb0a5);color:#321a3d;box-shadow:0 8px 22px #ff83bd30}
+.secondary{background:#ffffff12;border:1px solid #ffffff35;color:var(--white)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.actions button{flex:1;min-width:150px}
+.answers{display:grid;gap:11px;margin-top:22px}
+.answer{width:100%;text-align:left;background:#ffffff0e;border:1px solid #ffffff28;color:var(--white);padding:16px;border-radius:15px}
+.answer.correct{border-color:#8ee6b0;background:#4bba7720}
+.answer.wrong{border-color:#ff8b9b;background:#ff718c18}
+.feedback{min-height:0;margin-top:16px;padding:14px 16px;border:1px solid #ffd77866;border-radius:15px;background:#ffd77812;color:#ffe7a3;font-weight:700;line-height:1.6;overflow-wrap:anywhere}.feedback:empty{display:none}.feedback button{display:block}
+.balloon-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.balloon{border-radius:50% 50% 46% 46%;aspect-ratio:.82;background:linear-gradient(145deg,#ffacd4,#e95ca4);color:#411a45;font-size:1.6rem;box-shadow:inset -9px -10px 0 #a62d6d22,0 10px 22px #0003;position:relative}
+.balloon:nth-child(2n){background:linear-gradient(145deg,#d5c3ff,#9676df)}
+.balloon:nth-child(3n){background:linear-gradient(145deg,#ffe39a,#e9a94e)}
+.balloon:after{content:"";position:absolute;width:1px;height:23px;background:#ffffff88;bottom:-23px;left:50%}
+.envelopes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+.env{background:#f3c5df;color:#4b2448;min-height:112px;border-radius:12px 12px 18px 18px;position:relative;font-size:2.4rem}
+.env:nth-child(2){background:#d8c9ff}.env:nth-child(3){background:#ffe3a2}
+.env small{display:block;font-size:.7rem;letter-spacing:.1em}
+.note{padding:17px;border-radius:16px;background:#ffffff10;border:1px solid #ffffff25;margin-top:15px;color:#fff1fa;line-height:1.6}
+.hidden{display:none!important}
+.confetti{position:fixed;top:-20px;width:9px;height:14px;z-index:10;animation:fall linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(760deg);opacity:.8}}
+input{background:#ffffff12;border:1px solid #ffffff35;border-radius:12px;color:white;padding:14px;font:inherit;width:100%;margin-top:12px}
+input::placeholder{color:#cbbbd9}
+.small{font-size:.86rem;color:#cdbfdb}
+footer{text-align:center;color:#b8a8cc;font-size:.8rem;margin-top:22px}
+@media(max-width:460px){.balloon-grid{gap:8px}.balloon{font-size:1.25rem}.envelopes{gap:7px}.env{min-height:96px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="top"><span>✦ tajna misja urodzinowa</span><span class="pill" id="stageLabel">Etap 0 / 9</span></div>
+  <div class="progress-wrap"><div id="progress"></div></div>
+  <section class="card" id="screen"></section>
+  <footer>KLASYFIKACJA: ŚCIŚLE TAJNE · STAR CZI EDITION</footer>
+</main>
+<script>
+const screen=document.getElementById('screen'), progress=document.getElementById('progress'), stageLabel=document.getElementById('stageLabel');
+let stage=0, envelopeOpened=false, diceDone=false;
+function update(){progress.style.width=(stage/9*100)+'%';stageLabel.textContent=`Etap ${stage} / 9`;}
+function render(){update(); const pages=[
+`<div class="eyebrow">Akta specjalne · poufne</div><span class="big-emoji">🕵️‍♀️🎈</span><h1>OPERACJA:<br><span>STAR CZI 29</span></h1><p>Uwaga! System wykrył wyjątkową jednostkę o pseudonimie <b>STAR CZI</b>. Wiek: 29 lat. Poziom doświadczenia życiowego: podejrzanie wysoki.</p><p>Przed Tobą seria prób. Dopiero po ich zaliczeniu odblokujesz tajną wiadomość urodzinową. Nie próbuj oszukiwać. System patrzy. 👀</p><div class="actions"><button class="primary" onclick="next()">Rozpoczynam misję 🚀</button></div>`,
+`<div class="eyebrow">Etap 1 · kontrola wieku</div><span class="big-emoji">🎂</span><h2>Ważne pytanie, Starczi…</h2><p>Ile lat kończy dziś nasza młoda, energiczna i absolutnie nie-stara jubilatka?</p><div class="answers"><button class="answer" onclick="choose(this,false,'Błąd! Spróbuj jeszcze raz. Nie postarzaj jej aż tak… 😭')">29, ale mentalnie 18</button><button class="answer" onclick="choose(this,true,'Zgadza się! Dokumenty potwierdzają: 29. Jeszcze można szaleć… z umiarem. 😎')">29 – oficjalnie, bez możliwości reklamacji</button><button class="answer" onclick="choose(this,false,'Halo, halo! To nie jest jubileusz emerytalny. 😂')">39 – wersja po ciężkim tygodniu</button></div><div class="feedback" id="feedback"></div>`,
+`<div class="eyebrow">Etap 2 · test logiczny</div><span class="big-emoji">🧠</span><h2>Rozgrzewka dla szarych komórek</h2><p>Masz 3 świeczki. Zdmuchujesz jedną. Ile świeczek zostaje?</p><div class="answers"><button class="answer" onclick="choose(this,false,'Nie tym razem! Pomyśl, co dzieje się ze zdmuchniętą świeczką. 😉')">Dwie</button><button class="answer" onclick="choose(this,true,'Brawo! Wszystkie trzy zostają, tylko jedna już się nie pali. Logika działa! ✨')">Trzy</button><button class="answer" onclick="choose(this,false,'Jedna? A gdzie podziały się pozostałe? 🤣')">Jedna</button></div><div class="feedback" id="feedback"></div>`,
+`<div class="eyebrow">Etap 3 · balonowa loteria</div><span class="big-emoji">🎈</span><h2>Wybierz szczęśliwy balon</h2><p>Jeden z balonów zawiera przepustkę do kolejnego etapu. Pozostałe… cóż, mają swoje zdanie na temat Twojego wieku.</p><div class="balloon-grid"><button class="balloon" onclick="balloon(this,1)">1</button><button class="balloon" onclick="balloon(this,2)">2</button><button class="balloon" onclick="balloon(this,3)">3</button><button class="balloon" onclick="balloon(this,4)">4</button><button class="balloon" onclick="balloon(this,5)">5</button><button class="balloon" onclick="balloon(this,6)">6</button></div><div class="feedback" id="feedback"></div>`,
+`<div class="eyebrow">Etap 4 · test Starczi</div><span class="big-emoji">🛋️☕</span><h2>Wybierz najbardziej prawdopodobną odpowiedź</h2><p>Co jest najbardziej typowym objawem zbliżania się do trzydziestki?</p><div class="answers"><button class="answer" onclick="choose(this,false,'Nieee, to jeszcze nie ten poziom. 😂')">Nagle rozumiesz, po co są instrukcje obsługi</button><button class="answer" onclick="choose(this,true,'PERFEKCYJNIE! Witaj w klubie: „chciałabym wyjść, ale już jestem w piżamie”. 🤣')">Plany na wieczór brzmią super, dopóki nie trzeba wychodzić z domu</button><button class="answer" onclick="choose(this,false,'To akurat zdarza się w każdym wieku. 😁')">Masz ochotę na pizzę</button></div><div class="feedback" id="feedback"></div>`,
+`<div class="eyebrow">Etap 5 · wykrywacz ściemy</div><span class="big-emoji">🕵️‍♀️</span><h2>Znajdź jedyną prawdę</h2><p>Jedno z tych zdań jest prawdziwe. Dwa pozostałe to totalna ściema. Wybierz mądrze, Starczi!</p><div class="answers"><button class="answer" onclick="choose(this,false,'Ściema wykryta! Spróbuj jeszcze raz. 😜')">W wieku 29 lat człowiek automatycznie zaczyna lubić poniedziałki.</button><button class="answer" onclick="choose(this,true,'PRAWDA! Sen, dobre jedzenie i święty spokój zaczynają być coraz bardziej kuszące. 😂')">Dorosłość polega głównie na cieszeniu się, że coś zostało odwołane.</button><button class="answer" onclick="choose(this,false,'Nawet Starczi nie jest aż tak odporna na pokusy. 🤣')">Czekolada nigdy nie poprawia humoru.</button></div><div class="feedback" id="feedback"></div>`,
+`<div class="eyebrow">Etap 6 · szyfr jubilatki</div><span class="big-emoji">🔐</span><h2>Odszyfruj hasło</h2><p>Każda litera przesunęła się o jedną pozycję do przodu w alfabecie. Cofnij ją o jedną, a poznasz hasło.</p><div class="note" style="text-align:center;font-size:1.5rem;letter-spacing:.18em;font-weight:900">T U B S T</div><p class="small">Podpowiedź: to coś, czego dziś życzymy naszej jubilatce. 😉</p><input id="codeInput" placeholder="Wpisz odszyfrowane hasło…" autocomplete="off"><div class="actions"><button class="primary" onclick="checkCode()">SPRAWDŹ 🔎</button></div><div class="feedback" id="feedback"></div>`,
+`<div class="eyebrow">Etap 7 · tajemnicze koperty</div><span class="big-emoji">✉️</span><h2>Trzy koperty. Trzy tajemnice.</h2><p>Otwórz wszystkie trzy, żeby poznać komplet przepowiedni na kolejny rok życia.</p><div class="envelopes"><button class="env" onclick="openEnv(0,this)">✉️<small>NR 01</small></button><button class="env" onclick="openEnv(1,this)">✉️<small>NR 02</small></button><button class="env" onclick="openEnv(2,this)">✉️<small>NR 03</small></button></div><div id="envNotes"></div><div class="feedback" id="feedback"></div>`,
+`<div class="eyebrow">Etap 8 · próba szczęścia</div><span class="big-emoji" id="dice">🎲</span><h2>Rzut kostką przeznaczenia</h2><p>Podobno szczęście sprzyja jubilatkom. Kliknij i sprawdź, czy los jest po Twojej stronie.</p><div class="note" id="diceNote">Aby przejść dalej, musisz wyrzucić co najmniej 4. Masz nieograniczoną liczbę prób – w końcu to Twoje święto. 😁</div><div class="actions"><button class="primary" onclick="roll()">RZUĆ KOSTKĄ 🎲</button></div><div class="feedback" id="feedback"></div>`,
+`<div class="eyebrow">Etap 9 · misja zakończona</div><span class="big-emoji">🎉🎂🥂</span><h1>UDAŁO SIĘ,<br><span>STARCZI!</span></h1><p>Przeszłaś wszystkie próby, wykazałaś się refleksem, intelektem i imponującą odpornością na żarty o wieku.</p><p>System odblokował ostatni punkt. Przygotuj się na najważniejszą część tej misji… ❤️</p><div class="actions"><button class="primary" onclick="finale()">ODBIERZ ŻYCZENIA ✨</button></div>`
+];screen.innerHTML=pages[stage];}
+function next(){stage++;render();}
+function unlockNext(message){const fb=document.getElementById('feedback');fb.innerHTML='';const span=document.createElement('div');span.textContent=message;fb.appendChild(span);const hint=document.createElement('div');hint.className='small';hint.style.marginTop='8px';hint.textContent='Ta wiadomość zostanie tutaj, dopóki sama nie przejdziesz dalej.';fb.appendChild(hint);const b=document.createElement('button');b.className='primary';b.style.marginTop='14px';b.textContent='DALEJ →';b.onclick=next;fb.appendChild(b)}
+function choose(btn,ok,msg){const fb=document.getElementById('feedback');fb.textContent=msg;if(ok){btn.classList.add('correct');document.querySelectorAll('.answer').forEach(b=>b.disabled=true);unlockNext(msg)}else{btn.classList.add('wrong')}}
+function balloon(btn,n){const fb=document.getElementById('feedback');if(n===4){btn.textContent='⭐';document.querySelectorAll('.balloon').forEach(b=>b.disabled=true);unlockNext('TAK JEST! Znalazłaś przepustkę! Nawet po 29 latach instynkt działa. 😎')}else{btn.textContent='💥';btn.disabled=true;fb.textContent=['Ten balon mówi: „rozciągaj się przed wstawaniem”.','Pudło! W środku był rachunek za krem przeciwzmarszczkowy. 😂','Balon pękł ze śmiechu. Spróbuj innego!','Prawie! Ale nie tym razem.'][n%4]}}
+const notes=['Przepowiednia nr 1: W tym roku spotka Cię mnóstwo powodów do śmiechu. Niektóre będą nawet z Twojego własnego życia. 🤣','Przepowiednia nr 2: Czeka Cię przynajmniej jedna spontaniczna przygoda. Wygodne buty zalecane! 👟','Przepowiednia nr 3: Będzie więcej powodów do dumy, spokoju i małych przyjemności. I żadnego obowiązkowego dorastania! 💖'];
+function openEnv(i,btn){if(btn.disabled)return;btn.disabled=true;btn.textContent='💌';let d=document.createElement('div');d.className='note';d.textContent=notes[i];document.getElementById('envNotes').appendChild(d);envelopeOpened=[...document.querySelectorAll('.env')].every(b=>b.disabled);if(envelopeOpened){unlockNext('Komplet przepowiedni zdobyty! Wszystkie trzy koperty są już Twoje. 💌')}}
+function roll(){let n=Math.floor(Math.random()*6)+1;document.getElementById('dice').textContent=['⚀','⚁','⚂','⚃','⚄','⚅'][n-1];let note=document.getElementById('diceNote');if(n>=4){note.textContent=`Wyrzuciłaś ${n}! Los Ci sprzyja. Przepustka przyznana! 🎉`;unlockNext('Próba szczęścia zaliczona! Gotowa na finał?')}else{note.textContent=`Wyrzuciłaś ${n}. Los mówi: „jeszcze raz, Starczi!”. 🤣`}}
+function checkCode(){const v=(document.getElementById('codeInput').value||'').trim().toUpperCase();const fb=document.getElementById('feedback');if(v==='STARS'){document.getElementById('codeInput').disabled=true;unlockNext('SZYFR ZŁAMANY! Hasło brzmi STARS. Starczi, masz głowę nie od parady! ✨')}else{fb.textContent='Nie ten szyfr! Cofnij każdą literę o jedną pozycję. Podpowiedź: T→S, U→T… 😉'}}
+function finale(){confetti();screen.innerHTML=`<div class="eyebrow">Wiadomość od nadawcy ❤️</div><span class="big-emoji">💖🎂✨</span><h1>Wszystkiego<br><span>NAJLEPSZEGO!</span></h1><p>Starczi! Z okazji Twoich 29. urodzin życzę Ci, żeby każdy kolejny dzień przynosił Ci coś dobrego – mnóstwo powodów do śmiechu, pięknych chwil, spełnionych marzeń i ludzi, przy których możesz być po prostu sobą.</p><p>Niech Ci się układa tak, jak sobie wymarzysz. Niech nie zabraknie Ci odwagi do szalonych pomysłów, energii do realizowania planów, zdrowia, szczęścia, miłości i pieniędzy – najlepiej w dużych ilościach. 🥂</p><p>A przede wszystkim pamiętaj: 29 to nie starość. To 18 lat z 11-letnim doświadczeniem. 🤣❤️</p><div class="note"><b>Ściskam Cię mocno, Starczi! ❤️</b><br>Twoja – jeszcze starsza – Starczi</div><div class="actions"><button class="secondary" onclick="confetti()">JESZCZE TROCHĘ KONFETTI 🎊</button></div>`;stage=9;update()}
+function confetti(){for(let i=0;i<100;i++){let c=document.createElement('i');c.className='confetti';c.style.left=Math.random()*100+'vw';c.style.background=['#ff83bd','#ffd778','#c8b5ff','#8ee6b0','#fff'][i%5];c.style.animationDuration=(2+Math.random()*3)+'s';c.style.animationDelay=Math.random()*.8+'s';document.body.appendChild(c);setTimeout(()=>c.remove(),6000)}}
+render();
+</script>
+</body>
+</html>
